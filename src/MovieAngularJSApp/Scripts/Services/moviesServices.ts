@@ -9,6 +9,4 @@
                 query: { method: 'GET', params: {}, isArray: true }
             });
         }]);
-
-
 })();

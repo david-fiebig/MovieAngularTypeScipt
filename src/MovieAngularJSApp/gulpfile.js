@@ -16,10 +16,12 @@ gulp.task('clean', function (cb) {
     del([paths.dest, paths.destBower], cb);
 });
 gulp.task('scripts', function () {
-    return gulp.src(paths.scripts).pipe(gulp.dest(paths.dest));
+    return gulp.src(paths.scripts)
+        .pipe(gulp.dest(paths.dest));
 });
 gulp.task('bower', function () {
-    return gulp.src(paths.bower).pipe(gulp.dest(paths.destBower));
+    return gulp.src(paths.bower)
+        .pipe(gulp.dest(paths.destBower));
 });
 gulp.task('watch', function () {
     gulp.watch(paths.scripts, ['scripts']);
